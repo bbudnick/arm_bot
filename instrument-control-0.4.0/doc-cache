@@ -1,0 +1,223 @@
+# doc-cache created by Octave 5.1.0
+# name: cache
+# type: cell
+# rows: 3
+# columns: 7
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 9
+clrdevice
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 111
+ -- Function File: clrdevice (OBJ)
+     Send clear command to Clear GPIB instrument.
+
+     OBJ is a GPIB object
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 44
+Send clear command to Clear GPIB instrument.
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 11
+instrhwinfo
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 1125
+ -- Function File: [LIST] = instrhwinfo ()
+ -- Function File: LIST = instrhwinfo (INTERFACE)
+     Query available hardware for instrument-control
+
+     When run without any input parameters, instrhwinfo will provide the
+     toolbox information and a list of supported interfaces.
+
+     If an output variable is provided, the function will store the
+     information to the variable, otherwise it will be displayed to the
+     screen.
+
+          instrhwinfo
+          scalar structure containing the fields:
+
+             ToolboxVersion = 0.4.0
+             ToolboxName = octave instrument control package
+             SupportedInterfaces =
+             {
+               [1,1] = i2c
+               [1,2] = parallel
+               [1,3] = serial
+               [1,4] = tcp
+               [1,5] = udp
+               [1,6] = usbtmc
+               [1,7] = vxi11
+             }
+
+
+     INTERFACE is the instrument interface to query.  When provided,
+     instrhwinfo will provide information on the specified interface.
+
+     Currently only interface "serial" is supported, which will provide
+     a list of available serial ports.
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 47
+Query available hardware for instrument-control
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 10
+seriallist
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 227
+ -- Function File: LIST = seriallist ()
+     Returns a list of all serial ports detected in the system.
+
+     LIST is a string cell array of serial ports names detected in the
+     system.
+
+     See also: instrhwinfo("serial").
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 58
+Returns a list of all serial ports detected in the system.
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 5
+spoll
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 245
+ -- Function File: OUT = spoll (OBJ)
+ -- Function File: [OUT,STATUSBYTE] = spoll (OBJ)
+     Serial polls GPIB instruments.
+
+     OBJ is a GPIB object or a cell array of GPIB objects
+
+     OUT GPIB objects ready for service STATUSBYTE status Byte
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 30
+Serial polls GPIB instruments.
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 5
+tcpip
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 482
+ -- Function File: TCP = tcpip (HOST, [PORT], [PROPERTYNAME,
+          PROPERTYVALUE...])
+     Matlab compatible wrapper to the tcp interface.
+
+     HOST - the host name or ip.  PORT - the port number to connect.  If
+     omitted defaults to 80.  PROPERTYNAME, PROPERTYVALUE - Optional
+     property name, value pairs to set on the tcp object.  Currently the
+     only known properties are "timeout" and "name".
+
+     tcpip will return an instance of OCTAVE_TCP class as the result.
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 47
+Matlab compatible wrapper to the tcp interface.
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 7
+trigger
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 90
+ -- Function File: trigger (OBJ)
+     Triggers GPIB instrument.
+
+     OBJ is a GPIB object
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 25
+Triggers GPIB instrument.
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 8
+udp_demo
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 107
+ -- Function File: RESULT = udp_demo ()
+     Run test SNTP demonstration for udp class
+
+     See also: udp.
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 41
+Run test SNTP demonstration for udp class
+
+
+
+
+
