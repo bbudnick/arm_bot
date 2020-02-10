@@ -1,0 +1,9 @@
+
+__gpib_pkg_lock__(0);
+__i2c_pkg_lock__(0);
+__parallel_pkg_lock__(0);
+__serial_pkg_lock__(0);
+__tcp_pkg_lock__(0);
+__udp_pkg_lock__(0);
+__usbtmc_pkg_lock__(0);
+__vxi11_pkg_lock__(0);
