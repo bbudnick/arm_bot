@@ -1,0 +1,277 @@
+# doc-cache created by Octave 5.1.0
+# name: cache
+# type: cell
+# rows: 3
+# columns: 8
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 4
+gpib
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 293
+ -- Loadable Function: GPIB = gpib ([GPIBID], [TIMEOUT])
+
+     Open gpib interface.
+
+     GPIBID - the interface number.
+     TIMEOUT - the interface timeout value.  If omitted defaults to
+     blocking call.
+
+     The gpib() shall return instance of OCTAVE_GPIB class as the result
+     GPIB.
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 20
+Open gpib interface.
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 3
+i2c
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 344
+ -- Loadable Function: I2C = i2c ([PATH], [ADDRESS])
+
+     Open i2c interface.
+
+     PATH - the interface path of type String.  If omitted defaults to
+     '/dev/i2c-0'.
+     ADDRESS - the slave device address.  If omitted must be set using
+     i2c_addr() call.
+
+     The i2c() shall return instance of OCTAVE_I2C class as the result
+     I2C.
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 19
+Open i2c interface.
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 8
+parallel
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 426
+ -- Loadable Function: PARALLEL = parallel ([PATH], [DIRECTION])
+
+     Open Parallel interface.
+
+     PATH - the interface path of type String.  If omitted defaults to
+     '/dev/parport0'.
+     DIRECTION - the direction of interface drivers of type Integer,
+     see: PP_DATADIR for more info.  If omitted defaults to 1 (Input).
+
+     The parallel() shall return instance of OCTAVE_PARALLEL class as
+     the result PARALLEL.
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 24
+Open Parallel interface.
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 11
+resolvehost
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 717
+ -- Loadable Function: NAME = resolvehost (HOST)
+ -- Loadable Function: [NAME, ADDRESS] = resolvehost (HOST)
+ -- Loadable Function: OUT = resolvehost (HOST, RETURNTYPE)
+
+     Resolve a network host name or address to network name and address
+
+     HOST - Host name or IP address string to resolve.
+     NAME - Resolved IP host name.
+     ADDRESS - Resolved IP host address.
+     RETURNTYPE - 'name' to get host name, 'address' to get IP address.
+
+     Examples:
+
+           %% get resolved ip name and address pf www.gnu.org
+           [name, address] = resolvehost ('www.gnu.org');
+
+           %% get ip address of www.gnu.org
+           ipaddress = resolvehost ('www.gnu.org', 'address');
+
+
+     See also: tcp, udp.
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 66
+Resolve a network host name or address to network name and address
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 6
+serial
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 406
+ -- Loadable Function: SERIAL = serial ([PATH], [BAUDRATE], [TIMEOUT])
+
+     Open serial interface.
+
+     PATH - the interface path of type String.
+     BAUDRATE - the baudrate of interface.  If omitted defaults to
+     115200.
+     TIMEOUT - the interface timeout value.  If omitted defaults to
+     blocking call.
+
+     The serial() shall return instance of OCTAVE_SERIAL class as the
+     result SERIAL.
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 22
+Open serial interface.
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 3
+tcp
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 420
+ -- Loadable Function: TCP = tcp ([IPADDRESS], [PORT], [TIMEOUT])
+
+     Open tcp interface.
+
+     IPADDRESS - the ip address of type String.  If omitted defaults to
+     '127.0.0.1'.
+     PORT - the port number to connect.  If omitted defaults to 23.
+     TIMEOUT - the interface timeout value.  If omitted defaults to
+     blocking call.
+
+     The tcp() shall return instance of OCTAVE_TCP class as the result
+     TCP.
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 19
+Open tcp interface.
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 3
+udp
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 551
+ -- Loadable Function: UDP = udp ([REMOTEIPADDRESS], [REMOTEPORT],
+          [LOCALPORT], [TIMEOUT])
+
+     Open udp interface.
+
+     REMOTEIPADDRESS - the ip address of type String.  If omitted
+     defaults to '127.0.0.1'.
+     REMOTEPORT - the port number to connect.  If omitted defaults to
+     23.
+     LOCALPORT - the local port number to bind.  If omitted defaults to
+     0
+     TIMEOUT - the interface timeout value.  If omitted defaults to
+     blocking call.
+
+     The udp() shall return instance of OCTAVE_UDP class as the result
+     UDP.
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 19
+Open udp interface.
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 6
+usbtmc
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 258
+ -- Loadable Function: USBTMC = usbtmc (PATH)
+
+     Open usbtmc interface.
+
+     PATH - the interface path of type String.  If omitted defaults to
+     '/dev/usbtmc0'.
+
+     The usbtmc() shall return instance of OCTAVE_USBTMC class as the
+     result USBTMC.
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 22
+Open usbtmc interface.
+
+
+
+
+

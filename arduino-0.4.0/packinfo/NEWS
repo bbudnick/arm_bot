@@ -1,0 +1,81 @@
+Summary of important user-visible changes for arduino 0.4.0:
+-------------------------------------------------------------------
+ 
+  ** New addons
+    - adafruit.motorshieldv2
+
+  ** New functions:
+    - @arduino/checkI2CAddress
+    - arduino_bistsetup
+
+  ** Modified functions:
+    - added optional libtype specifier to listArduinoLibraries
+    - bugfix to core subsref functions
+    - updated property compare on core
+    - attempt to use user arduino preferences as back up for arduino binary find
+    - get full windows port for scanForArduinos, no case compare for board type
+  
+  ** minor function documentation updates
+
+  ** Added sensors package:
+    - arduinosensor.DS1307
+    - arduinosensor.MPC3002
+    - arduinosensor.SI7021
+    - arduinosensor.GUVAS12SD
+
+Summary of important user-visible changes for arduino 0.3.0:
+-------------------------------------------------------------------
+
+ ** added getLibName, setup and loop functions to LibraryBase
+
+ ** Modified functions:
+    - implemented playTone
+    - added forcebuild property to arduino
+    - @spidev/writeRead uses transaction based transfers
+    - @spidev/spidev allow any CS pin to be used
+    - @i2cdev/readRegister return data only
+
+ ** New functions:
+    - @rotationalEncoder
+    - @arduino/getPinInfo
+    - @arduino/uptime
+    - @arduino/version
+    - @arduino/getSharedResourceProperty
+    - @arduino/setSharedResourceProperty
+    - arduinoio.AddonBase
+    - isarduino
+
+ ** New addons
+    - ExampleLCD.LCD
+    - EEPRomAddon.EEPRom
+    - RTCAddon.DS1307
+
+ ** minor function documentation updates
+
+ ** New board configurations:
+    - Arduino Pro/Pro Mini
+    - Arduino Nano
+    - Lilypad
+
+ ** updated to arduinoaddons to query using metadata
+
+Summary of important user-visible changes for arduino 0.2.0:
+-------------------------------------------------------------------
+
+ ** update arduinosetup for windows arduino ide changes
+
+ ** bug fixes for use with older versions of octave
+
+ ** bug fix mode config in flash
+
+ ** added initial support for additional board types:
+    - ARM sparkfun SAMD21 dev board
+
+ ** added manual
+
+
+Summary of important user-visible changes for arduino 0.1.0:
+-------------------------------------------------------------------
+
+ ** Initial release
+
