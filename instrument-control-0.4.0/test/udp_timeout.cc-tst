@@ -1,0 +1,9 @@
+## Generated from udp_timeout.cc
+%!test
+%! a = udp();
+%! assert(udp_timeout(a), -1);
+%! udp_timeout(a, 103);
+%! assert(udp_timeout(a), 103);
+%! close(a);
+%!error <Invalid call to udp_timeout> udp_timeout()
+%!error <Invalid call to udp_timeout> udp_timeout(1)
