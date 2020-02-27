@@ -1,4 +1,4 @@
-%This script is intended to output angle position given a motor ID
+%This script is intended to be used with Arduino.posAsk in order to obtain angle position given a motor ID
 
 function[angle] = posAsk(serial, id)
 this function asks for the position of a dynamixel. 
