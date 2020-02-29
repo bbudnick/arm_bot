@@ -1,0 +1,2 @@
+//This is the link to drop in Arduino File > Preferences
+https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json

@@ -108,4 +108,3 @@ int adjustPosition(uint8_t a, uint8_t b)
     return 1023; 
   }
 }
-
