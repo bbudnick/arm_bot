@@ -2,7 +2,7 @@
 
 README
 
-Team mates: Lindie Burgess, Brita Hill, Vadim Naumchuk, Caspar Kim
+Team mates: Lindie Burgess, Brita Hill, Vadim Naumchuk
 
 Project to create an arm to grasp a marker and write the first 10 letters of the English alphabet. 
 
