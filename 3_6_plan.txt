@@ -1,0 +1,21 @@
+     Get user input (letter choices) 
+     Check for valid input
+     Get appropriate letter
+|    Discretize letter vectors
+|    Create T matrices
+|    Process T matrices through IKinSpace
+v    Get result of IKinSpace 
+    
+    
+     Today? Unsure how to translate what Lindie and I have been working on 
+     to meet Vadim's code in the middle 
+    
+^    Send result of IKinSpace to Arduino
+|    Translate general vectors to physical angles and rotations 
+|    Use pos set to communicate new positions
+|    Establish home position angles via serial for each motor 
+     Send series of positions to each motor via updated_communication.ino
+
+Lingering quetsions: 
+  1. How do we use the generalized vectors to get angles to send to the Arduino? 
+  2. 
