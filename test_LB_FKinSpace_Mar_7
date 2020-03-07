@@ -1,0 +1,5 @@
+Slist_actual
+
+thetalist = [pi; 3*(pi)/2; 0; 0; 0]
+
+T = FKinSpace(M, Slist, thetalist)
