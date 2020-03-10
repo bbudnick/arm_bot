@@ -1,9 +1,11 @@
-function[position] = positionset(serial, goalPos)
+%Script to be saved in matlab
 
-  low = mod(goalPos, 256);
-  high = floor(goalPos/256);
-  
-  srl_fwrite(serial, low);
-  srl_fwrite(serial, high);
-  
-  position = srl_fread(serial, 1) + srl_fread(serial, 1)*256;
+function[position] = positionSet(serial, goalPos)
+
+    low = mod(goalPos, 256);
+    high = floor(goalPos/256);
+    
+    fwrite(serial, low);
+    fwrite(serial, high);
+    
+    position = fread(serial, 1) + fread(serial, 1)*256;

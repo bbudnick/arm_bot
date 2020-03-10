@@ -59,6 +59,6 @@ M = [[0,-1,0,Xsum];   % double check orientation
      [0,0,0,1]]
 
 
-thetalist = [pi;-pi/2;0;0;0];
-Tsb = FKinSpace(M, Slist, thetalist)
+%thetalist = [pi;-pi/2;0;0;0];
+%Tsb = FKinSpace(M, Slist, thetalist)
 

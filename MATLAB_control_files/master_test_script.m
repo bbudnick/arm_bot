@@ -1,7 +1,3 @@
-%This master script calls all other functions to operate the arm 
-
-
-
 sCloseAll; 
 clear;
 close('all');
@@ -18,22 +14,29 @@ forwardKMats
 
 %Guess: w at center of board: first forward position 
 posSet(local_serial, 1, 3071)
+pause(2)
 posSet(local_serial, 2, 1024)
+pause(2)
 posSet(local_serial, 3, 512)
+pause(2)
 posSet(local_serial, 4, 512)
+pause(2)
 posSet(local_serial, 5, 530)
+pause(2)
 
 %Future theta functionality:
 %With each time we send a value to the motors, their theta
 %will change. It will be updated here. 
 user_letter_request = 1; 
-user_input = [w r]
+user_input = [r r]
 
 eomg = 0.1;
 ev = 0.01;
 
 %send user input to get appropriate vectors
 %stuff = matchLetter(user_input);
+
+
     
 T = usesLinSpace(user_input)
 for i = 1:size(T,3)
@@ -51,11 +54,11 @@ for i = 1:size(T,3)
     final_converted_theta_list = mod(Rad2BitA(new_thetalist(3:5)), 1023);
     
     ULTIMATE_THETA = vertcat(first_converted_theta_list, second_converted_theta_list, final_converted_theta_list)
-
-
-for i=1:size(ULTIMATE_THETA) %check this size function 
-    posSet(local_serial, i, new_thetalist(i))  
-end
+    
+    for i=1:size(ULTIMATE_THETA) %check this size function 
+        posSet(local_serial, i, new_thetalist(i))  
+        pause(2)
+    end
 %while (local_serial.BytesAvailable < 10), end
 end
 
