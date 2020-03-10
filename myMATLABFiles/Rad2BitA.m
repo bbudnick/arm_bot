@@ -1,5 +1,4 @@
 function [bit] = Rad2BitA(radian) 
 
-bit = radian * 180/(pi) (1023/300); 
-
+	bit = [(5/6 * pi)/512]*radian+(5/6 * pi);
 end 

@@ -14,8 +14,8 @@ function a = usesLinSpace(user_choice)
         z_res = linspace(current(3), goal(3), n); 
         MONDO(:, (n*(P-1)+1):n*P) = [x_res; y_res; z_res]
     end
-    
-    R = [1, 0, 0; 0, 1, 0; 0, 0, 1; 0, 0, 0];
+   
+    R = [-1, 0, 0; 0, -1, 0; 0, 0, 1; 0, 0, 0];
     
     for Q = 1 : size(MONDO, 2)
         super_final_p = [MONDO(:, Q); 1]
