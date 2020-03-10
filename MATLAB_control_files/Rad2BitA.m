@@ -1,4 +1,6 @@
 function [bit] = Rad2BitA(radian) 
 
-	bit = [(5/6 * pi)/512]*radian+(5/6 * pi);
+	bit = round((512/(5*pi/6))*radian)+512;
 end 
+
+%otherwise use interp1()

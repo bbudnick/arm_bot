@@ -2,26 +2,16 @@
 %Includes definitions for the robot to draw each letter path [A through J]
 
 % Define k values
+% k1 = -35
 k1 = 0
 k2 = 395
-k3 = 175
+k3 = 180
 
 % Define v values
-letter_width = 70
-letter_thick = 30
+letter_width = 50
+letter_thick = 20
 letter_height = 80
 letter_kern = 80
-
-%lengths
-% L0 = 150
-% L1 = 110
-% L2 = 77
-% L3 = 100
-% L4 = 100
-% L5 = 56
-% L6 = 240
-% L7 = 30
-
 
 %define Positions in space
 w = [-k1; k2-letter_thick; k3];

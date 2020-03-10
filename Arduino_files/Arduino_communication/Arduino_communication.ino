@@ -43,8 +43,8 @@ void loop() {
     dxl_wb.readRegister(id, (uint16_t)37, (uint16_t)1, &get_data_2); 
 
     //Sends the low and high bytes over the serial port
-    Serial.write((int8_t)get_data_1);  
-    Serial.write((int8_t)get_data_2); 
+    //Serial.write((int8_t)get_data_1);  
+    //Serial.write((int8_t)get_data_2); 
   
   }
 
