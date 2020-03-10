@@ -7,10 +7,11 @@ function a = getDesiredLetters()
     
     answer = inputdlg(prompt,dlgtitle,dims,definput)
     
-    for i=1:5 
-        first_letter = answer{''}
-        matchLetter(first_letter)
-    end
+    while answer(~='')
+        for i=1:5 
+            matchLetter(answer.definput{i})
+        end
+    end 
     
 %     
 %     for i=1:5

@@ -9,21 +9,23 @@ letterVectorDefs
 %Slist_actual
 forwardKmats
 
+%initial orientation 
+% posSet(local_serial, 1, 1024)
+% posSet(local_serial, 2, 2048)
+% posSet(local_serial, 3, 512)
+% posSet(local_serial, 4, 512)
+% posSet(local_serial, 5, 512)
+% posSet(local_serial, 6, 500) %open end effector
+% pause(15)
+% posSet(local_serial, 6, 330) %close end effector
 
-% Guess: w at center of board: first forward position
-% posSet(local_serial, 1, 2048)
-% posSet(local_serial, 2, 3072)
-posSet(local_serial, 1, 3072)
-posSet(local_serial, 2, 1024)
-posSet(local_serial, 3, 512)
-posSet(local_serial, 4, 512)
-posSet(local_serial, 5, 512)
+%pen hits board on movement to start pos
 
 %Future theta functionality:
 %With each time we send a value to the motors, their theta
 %will change. It will be updated here.
 user_letter_request = 1;
-user_input = [n o p q r s t m n]
+user_input = [w,s,q,o,m,w,n,r,w]
 
 eomg = 0.1;
 ev = 0.01;
@@ -60,7 +62,7 @@ for i = 1:size(T,3)
 %         second_converted_theta_list = mod((Rad2BitM2(new_thetalist(2))), 4095);
 %         final_converted_theta_list = mod((Rad2BitA(new_thetalist(3:5))), 1023);
 
-        first_converted_theta_list = Rad2BitM1(new_thetalist(1));
+        first_converted_theta_list = mod(Rad2BitM1(new_thetalist(1)), 4095);
         second_converted_theta_list = mod(Rad2BitM2(new_thetalist(2)), 4095);
         final_converted_theta_list = mod(Rad2BitA(new_thetalist(3:5)), 1227);
 

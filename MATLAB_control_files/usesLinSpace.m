@@ -13,6 +13,7 @@ function a = usesLinSpace(user_choice)
         y_res = linspace(current(2), goal(2), n);
         z_res = linspace(current(3), goal(3), n); 
         MONDO(:, (n*(P-1)+1):n*P) = [x_res; y_res; z_res]
+        
     end
    
     R = [1, 0, 0; 0, 1, 0; 0, 0, 1; 0, 0, 0];
