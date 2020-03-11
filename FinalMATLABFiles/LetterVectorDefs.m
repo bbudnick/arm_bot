@@ -2,26 +2,16 @@
 %Includes definitions for the robot to draw each letter path [A through J]
 
 % Define k values
+% k1 = -35
 k1 = 0
 k2 = 395
-k3 = 175
+k3 = 180
 
 % Define v values
-letter_width = 70
-letter_thick = 30
-letter_height = 80
+letter_width = 30
+letter_thick = 20
+letter_height = 60
 letter_kern = 80
-
-%lengths
-% L0 = 150
-% L1 = 110
-% L2 = 77
-% L3 = 100
-% L4 = 100
-% L5 = 56
-% L6 = 240
-% L7 = 30
-
 
 %define Positions in space
 w = [-k1; k2-letter_thick; k3];
@@ -43,23 +33,22 @@ q = [w]+[(letter_width/2);letter_thick;(letter_height/2)];
 
 
 %define letter shapes using an array of vectors
-A = [w,s,q,o,m,w,n,r,w];
+A = [u,w,s,q,o,m,w,n,r,w];
 
-B = [w,n,o,q,u,s,m,n,u,w];
+B = [u,w,n,o,q,u,s,m,n,u,w];
 
-C = [w,q,o,m,s,w];
+C = [u,w,q,o,m,s,w];
 
-D = [w,r,p,o,m,t,r,w];
+D = [u,w,r,p,o,m,t,r,w];
 
-E = [w,q,o,m,s,w,n,u,w];
+E = [u,w,q,o,m,s,w,n,u,w];
 
-F = [w,q,o,m,w,n,u,w];
+F = [u,w,q,o,m,w,n,u,w];
 
-G = [w,q,o,m,s,r,u,w];
+G = [u,w,q,o,m,s,r,u,w];
 
-H = [w,q,s,w,o,m,w,n,r,w];
+H = [u,w,q,s,w,o,m,w,n,r,w];
 
-I = [w,o,q,w,m,s,w,p,t,w];
+I = [u,w,o,q,w,m,s,w,p,t,w];
 
-J = [w,o,q,w,p,s,m,n,w];
-
+J = [u,w,o,q,w,p,s,m,n,w];

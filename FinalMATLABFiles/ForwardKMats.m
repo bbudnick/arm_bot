@@ -1,4 +1,3 @@
-
 L0 = 150;
 L1 = 110; %Mx1 to Mx2 -x-dir
 L2 = 77;  %Mx2 to Ax1 -x-dir
@@ -61,4 +60,3 @@ M = [[0,-1,0,Xsum];   % double check orientation
 
 thetalist = [pi;-pi/2;0;0;0];
 Tsb = FKinSpace(M, Slist, thetalist)
-
