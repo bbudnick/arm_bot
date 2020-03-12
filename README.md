@@ -2,7 +2,7 @@
 
 README
 
-Robotics 457/557, Winter 2020
+Robotics, Winter 2020
 Teammates: Lindie Burgess, Brita Hill, Vadim Naumchuk
 
 Project to create an arm to grasp a marker and write the first 10 letters of the English alphabet. 
