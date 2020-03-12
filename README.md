@@ -1,6 +1,8 @@
 # arm_bot
 
-README
+Portland State University 
+Winter 2020
+ME 457/557 Robotics
 
 Robotics, Winter 2020
 Teammates: Lindie Burgess, Brita Hill, Vadim Naumchuk
